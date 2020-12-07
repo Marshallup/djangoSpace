@@ -443,7 +443,7 @@ input:-webkit-autofill:active {
       text-decoration: none; }
 .main {
   background: url("../img/bg-main1.jpg") center center/cover no-repeat;
-  height: 1012px; }
+  height: 900px; }
 .main__title {
     margin-bottom: 16px;
     margin-top: 309px; }
@@ -701,6 +701,14 @@ input:-webkit-autofill:active {
         -ms-flex-align: center; }
 .footer__logo {
     margin-right: 32px; }
+.footer__logo img {
+          image-rendering: -webkit-optimize-contrast;
+          image-rendering: -moz-crisp-edges;
+          image-rendering: -o-pixelated;
+          image-rendering: pixelated;
+      -ms-interpolation-mode: nearest-neighbor; }
+.footer__icon-fb {
+    display: block; }
 @media screen and (max-width: 1241px) {
   .section--pt {
     padding-top: 88px; }
@@ -828,11 +836,11 @@ input:-webkit-autofill:active {
       -webkit-transform: translateX(-100%);
           -ms-transform: translateX(-100%);
               transform: translateX(-100%);
-      -webkit-transition: -webkit-transform 0.5s ease;
-      -o-transition: transform 0.5s ease;
-      transition: -webkit-transform 0.5s ease;
-      transition: transform 0.5s ease;
-      transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+      -webkit-transition: -webkit-transform 0.3s ease;
+      -o-transition: transform 0.3s ease;
+      transition: -webkit-transform 0.3s ease;
+      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, -webkit-transform 0.3s ease;
       width: 100%;
       z-index: 0; }
       .header-menu-burger {
@@ -1002,4 +1010,6 @@ input:-webkit-autofill:active {
       -webkit-justify-content: space-between;
               justify-content: space-between; }
     .footer__logo {
-      max-width: 90px; } }
+      max-width: 90px; }
+      .footer__logo img {
+        image-rendering: auto; } }
